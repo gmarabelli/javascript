@@ -3,11 +3,13 @@
 	// qui posso usare outer
 	alert(outer);
 	{
-		// qui non posso ancora usare inner,
+		// qui non posso ancora usare inner
 		// perchè non è stata dichiarata
+		// ma posso usare outer
+		outer = "bello!";
+		alert(outer);
 		let inner;
 		// qui posso usare sia inner che outer
-		alert(outer);
 		// inner non è stata inizializzata:
 		// essa avrà valore undefined
 		alert(inner);
@@ -19,6 +21,6 @@
 	alert(outer);
 	// mentre inner non è più utilizzabile
 	// infatti la seguente espressione genera errore:
-	// "inner not defined"
+	// "inner is not defined"
 	alert(inner);
 </script>
