@@ -1,0 +1,21 @@
+<script>
+	let outer = "ciao";
+	// qui posso usare outer
+	alert(outer);
+	{
+		// qui non posso ancora usare inner,
+		// perchè non è stata dichiarata
+		let inner;
+		// qui posso usare sia inner che outer
+		alert(outer);
+		// inner non è stata inizializzata:
+		// essa avrà valore undefined
+		alert(inner);
+		inner = -216;
+		// qui inner ha valore 216
+		alert(inner);
+	}
+	// fuori dalle graffe inner non è più utilizzabile
+	// outer è ancora utilizzabile
+	alert(outer);
+</script>
