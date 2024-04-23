@@ -1,0 +1,11 @@
+<script>
+	let num = 0, c;
+	alert("Inserisci le cifre binarie, una per volta");
+	alert("Per terminare scrivi 'OK'");
+	c = prompt("Inserisci la prima cifra");
+	while(c != "OK"){
+		num = + c + num * 2;
+		c = prompt("Inserisci la prossima cifra");
+	}
+	alert("Il numero in decimale è " + num);
+</script>
